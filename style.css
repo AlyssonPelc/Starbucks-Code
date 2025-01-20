@@ -1,0 +1,177 @@
+body{
+    color: #333;
+    font-family: 'SoDoSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.4rem;
+    background-color: #1E3932;;
+}
+body{
+    margin: 0 0;
+    padding: 0;
+}
+
+#container1 {
+    display: flex;
+    background-color: #1E3932;
+    width: 100%;
+    height: 33px;
+    padding: 37px 69px;
+    margin: 0 auto;
+    gap: 40px;
+}
+#container1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    height: 30px;
+}
+#container1 .a1:hover{
+    color: rgb(11, 105, 0);
+    border-bottom: 2px solid rgb(11, 105, 0);
+}
+#container2{
+    display: block;
+
+}
+
+#container2 {
+    background-color: #1E3932;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 20px;
+    
+    display: flex; /* Ativa flexbox */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 10px; /* Espaçamento entre a imagem e o texto */
+
+}
+#container2 img{
+    height: 37px;
+    margin-bottom: 5px;
+}
+
+#container1 #img2 {
+    height: 70px; /* Ajuste conforme necessário */
+    margin-left: 156px; /* Ajuste o alinhamento da imagem */
+    position: relative; /* Permite ajustar a posição */
+    top: -17px; /* Move a imagem para cima, ajuste o valor conforme necessário */
+}
+#container1:hover{
+    background-color: #fff;
+    transition: .5s, top 1s;;
+}
+#container1:hover a{
+    color: #1E3932;
+}
+#img3{
+    display: none;
+}
+#container1:hover #img2{
+    display:none;
+}
+#container1:hover #img3{
+    display:inline;
+    height: 80px; /* Ajuste conforme necessário */
+    margin-left: 145px; /* Ajuste o alinhamento da imagem */
+    position: relative; /* Permite ajustar a posição */
+    top: -25px; /* Move a imagem para cima, ajuste o valor conforme necessário */
+    border-radius: 50px;
+}
+#span1{
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-left: 150px;
+
+}
+.i4{
+    display: none;
+}
+#img4{
+    height: 26px;
+    margin-bottom: 100px;
+}
+#img5{
+    height: 25px;
+}
+#container3{
+    display: flex;
+    gap: 22px;
+}
+#container1:hover #span1{
+    border: 1px solid #1E3932;
+}
+#container1:hover #img6{
+    height: 40px;
+    margin-bottom: 100px;
+    display: inline;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+#container1:hover #img4{
+    display:none
+}
+#container1:hover #img5{
+    display:none
+}
+#container1:hover #img7{
+    height: 35px;
+    margin-bottom: 100px;
+    display: inline;
+    position: relative;
+    top: -6px;
+    left: -18px;
+}
+#container1 img{
+    transition: none;
+}
+#cafes-container {
+    display: none; /* Mantém oculto inicialmente */
+    position: absolute;
+    top: 150px; /* Mantém abaixo do #container1 */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 90px 0;
+    z-index: 999; /* Mantém acima de outros elementos */
+}
+
+#cafes-container .cafes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#cafes-container img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#cafes-container img:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Exibe o menu quando o mouse está sobre o link ou sobre o próprio menu */
+#cafe:hover #cafes-container{
+    display: block;
+}
